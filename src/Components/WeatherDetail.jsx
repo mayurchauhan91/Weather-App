@@ -8,6 +8,7 @@ const WeatherDetail = (props) => {
         <img
           className="weather-img"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Ln7k5jWjPr2McUJX6buroRInBucvGN8Srg&usqp=CAU"
+          alt=""
         />
         <h3 className="weather-city">{props.name}</h3>
         <h5 className="temp">
