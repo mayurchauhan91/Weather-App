@@ -1,0 +1,53 @@
+.weather-bg {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.input-section {
+  justify-content: center;
+}
+.form-control,
+.btn-primary {
+  width: 300px;
+}
+
+.weatherResult {
+  margin: auto;
+  height: 300px;
+  width: 500px;
+}
+
+.weather-img {
+  width: 150px;
+  height: 150px;
+}
+
+.weather-city {
+  font-size: 30px;
+}
+
+.temp {
+  font-weight: 700;
+  font-size: 45px;
+}
+span {
+  font-size: 35px;
+}
