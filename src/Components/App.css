@@ -1,15 +1,15 @@
 .weather-bg {
   height: 50vh;
   display: flex;
-  align-items: center;
+  padding: 50px;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   color: white;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  animation: gradient 15s ease infinite;
+  background: url("https://www.maketecheasier.com/assets/uploads/2020/06/Featured-Image-Live-Weather-Wallpapers-Android.jpg");
 }
 
-@keyframes gradient {
+@keyframes bg-animation {
   0% {
     background-position: 0% 50%;
   }
@@ -21,33 +21,72 @@
   }
 }
 
-.input-section {
-  justify-content: center;
-}
 .form-control,
 .btn-primary {
   width: 300px;
 }
 
 .weatherResult {
+  background-image: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300% 300%;
+  animation: bg-animation 10s ease infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: auto;
   height: 300px;
   width: 500px;
 }
+.input-section {
+  justify-content: center;
+}
+.result-container {
+  margin: 30px 0;
+}
 
 .weather-img {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
+  margin: 20px;
 }
 
 .weather-city {
   font-size: 30px;
 }
-
 .temp {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 45px;
 }
 span {
   font-size: 35px;
+}
+
+@media only screen and (max-width: 800px) {
+  .input-section {
+    justify-content: center;
+  }
+  .weatherResult {
+    width: 400px;
+    height: 300px;
+  }
+  .weather-img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+  }
+  .temp {
+    font-weight: 700;
+    font-size: 35px;
+    margin: 10px;
+  }
+  span {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 399px) {
+  .weatherResult {
+    margin: 20px;
+    width: auto;
+    height: 300px;
+  }
 }

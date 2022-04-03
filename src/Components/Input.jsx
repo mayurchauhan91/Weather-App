@@ -5,6 +5,11 @@ const Input = (props) => {
   const handleSearch = () => {
     props.data(props.inputCity);
   };
+  const onKeyUp = (e) => {
+    if (e.key === "Enter") {
+      props.data(props.inputCity);
+    }
+  };
   const handleChange = (e) => {
     props.setInputCity(e.target.value);
   };
@@ -20,6 +25,7 @@ const Input = (props) => {
           value={props.inputCity}
           onChange={handleChange}
           placeholder="Add City"
+          onKeyUp={onKeyUp}
         />
         <button
           className="btn btn-primary"

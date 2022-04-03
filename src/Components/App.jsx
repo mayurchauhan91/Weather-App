@@ -1,4 +1,4 @@
-import axios, { Axios } from "axios";
+import axios from "axios";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -6,7 +6,7 @@ import "./App.css";
 import Input from "./Input";
 import WeatherDetail from "./WeatherDetail";
 
-function App(props) {
+function App() {
   const apiKey = "1a604af300908f1461129e7501e28c58";
   const [data, setData] = useState({});
   const [inputCity, setInputCity] = useState("");
