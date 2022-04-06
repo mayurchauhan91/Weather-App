@@ -11,7 +11,7 @@ const Input = (props) => {
     }
   };
   const handleChange = (e) => {
-    props.setInputCity(e.target.value);
+    props.setInputCity(e.target.value.replace(/[^a-z A-Z]/gi, ""));
   };
   return (
     <div className="weather-bg">

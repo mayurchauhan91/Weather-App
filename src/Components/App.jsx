@@ -23,7 +23,7 @@ function App() {
         setData(res.data);
       })
       .catch((err) => {
-        console.log("err", err);
+        alert("Please input valid city or country", err);
       });
   };
   return (
@@ -38,6 +38,10 @@ function App() {
           <WeatherDetail
             name={data?.name}
             temperature={(data?.main?.temp - 273.15).toFixed(2)}
+            minTemp={(data?.main?.temp_min - 273.15).toFixed(2)}
+            maxTemp={(data?.main?.temp_max - 273.15).toFixed(2)}
+            description={data?.weather[0]?.description}
+            weatherIcon={data?.weather[0]?.icon}
           />
         )}
       </div>
