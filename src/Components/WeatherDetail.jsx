@@ -18,12 +18,12 @@ const WeatherDetail = (props) => {
             {props.temperature}°<span className="temp-c">C</span>
           </h5>
           <div className="min-max-container">
-            <h6 className="min-max">Max Temp</h6>
+            <h6 className="min-max">Max</h6>
             <p className="min-max-temp">
               {props.maxTemp}°<span className="min-max-celsius">C</span>
             </p>
 
-            <h6 className="min-max">Min Temp</h6>
+            <h6 className="min-max">Min</h6>
             <p className="min-max-temp">
               {props.minTemp}°<span className="min-max-celsius">C</span>
             </p>
