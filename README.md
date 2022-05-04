@@ -1,7 +1,7 @@
 # Weather/News APP 
 ## [Check it here]( https://rainbow-cannoli-defc7e.netlify.app/) :fire:
 ## This project is created as to understand how to simplify web project implementing ReactJS.
-![](https://github.com/mayurchauhan91/Portfolio/blob/master/Image/Weather%20App%20Image.png)
+![](https://github.com/mayurchauhan91/Portfolio/blob/master/Image/Weather%20App%20Img.png)
 
 ## This project uses the following technologies:
 
