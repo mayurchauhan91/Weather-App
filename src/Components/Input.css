@@ -1,0 +1,38 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    margin: auto;
+    text-align: center;
+    font-weight: 100;
+}
+.card-main-container {
+    border: none;
+    
+}
+.card-container {
+    padding-bottom: 10px;
+}
+.Card {
+    padding-top: 20px;
+    border: none;
+}
+.card-title {
+    font-size: 1rem;
+}
+.form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 250px;
+    width: auto;
+    height: 100px;
+}
+
+
+
+
+
+
