@@ -47,7 +47,7 @@ const News = () => {
           return (
             <ListItem alignItems="flex-start" key={item.title}>
               <ListItemAvatar>
-                <a target="_blank" rel="" href={item.url}>
+                <a target="_blank" rel="noopener" href={item.url}>
                   <Avatar alt="Remy Sharp" src={item.image} />
                 </a>
               </ListItemAvatar>
